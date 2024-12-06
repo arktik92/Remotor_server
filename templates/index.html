@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Mouse QR Code</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        img {
+            margin-top: 20px;
+            max-width: 300px;
+            height: auto;
+        }
+        .info {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Connectez votre iPhone au serveur</h1>
+    <p>Scannez le QR code ci-dessous pour vous connecter au serveur :</p>
+    <img src="/qrcode" alt="QR Code">
+    <div class="info">
+        Adresse du serveur : <strong>{{ server_ip }}:12345</strong>
+    </div>
+</body>
+</html>
